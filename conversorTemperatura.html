@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="conversorTemperatura.css">
+    <title>Conversor de Temperatura</title>
+</head>
+
+<body>
+    <header>
+        <!-- Musica -->
+        <audio id="musica" autoplay loop>
+            <source src="./assets/El tiempo en Megavision (1998-2013).mp3" type="audio/mp3">
+        </audio>
+    </header>
+    <main>
+        <div class="contenidoMain">
+            <h2>Conversor de Temperatura</h2>
+            <label for="celsius">Ingresa la temperatura en °C:</label>
+            <input type="text" id="celsius">
+            <button onclick="conversorTemperatura()">Convertir</button>
+            <button onclick="resetear()">Resetear</button>
+        </div>
+
+        <p id="resultado"></p>
+    </main>
+    <footer>
+        <p>Made by InsanityDev ©</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="./conversorTemperatura.js"></script>
+</body>
+
+</html>
